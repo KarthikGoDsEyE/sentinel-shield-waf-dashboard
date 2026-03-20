@@ -47,17 +47,20 @@ This project simulates a real-world web security monitoring system using:
 - Matplotlib  
 
 ---
-
 ## 📁 Project Structure
+
+```
 SentinelShield/
 │
-├── app.py # Flask dashboard
-├── log_analyzer.py # CLI log analyzer
+├── app.py
+├── log_analyzer.py
 ├── templates/
-│ └── index.html # Dashboard UI
+│   └── index.html
 ├── static/
-│ └── graph.png # Generated graph
+│   └── graph.png
 ├── README.md
+├── INSTALLATION.md
+```
 
 
 
