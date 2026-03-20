@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SentinelShield Dashboard</title>
+    <meta http-equiv="refresh" content="5">
+</head>
+
+<body style="background:black;color:white;text-align:center">
+
+<h1>🚨 SentinelShield SOC Dashboard</h1>
+
+<h2>Total Attacks: {{ total }}</h2>
+
+<p>SQL Injection: {{ sql }}</p>
+<p>XSS Attacks: {{ xss }}</p>
+<p>Command Injection: {{ cmd }}</p>
+
+<h3>📊 Attack Graph</h3>
+<img src="{{ url_for('static', filename='graph.png') }}" width="400">
+
+<h3>🌐 Top Attacker IPs</h3>
+<table border="1" align="center">
+<tr><th>IP</th><th>Requests</th></tr>
+
+{% for ip, count in ip_count.items() %}
+<tr>
+<td>{{ ip }}</td>
+<td>{{ count }}</td>
+</tr>
+{% endfor %}
+
+</table>
+
+<h3>🧠 IP Reputation</h3>
+<table border="1" align="center">
+<tr><th>IP</th><th>Status</th></tr>
+
+{% for ip, status in reputation.items() %}
+<tr>
+<td>{{ ip }}</td>
+<td>{{ status }}</td>
+</tr>
+{% endfor %}
+
+</table>
+
+</body>
+</html>
