@@ -64,11 +64,10 @@ SentinelShield/
 ## Screenshots
 
 ### Dashboard
-![Dashboard](screenshots/Screenshot From 2026-04-02 19-43-10.png)
+![Dashboard](screenshots/dashboard.png)
 
 ### Attack Logs
-![Logs](screenshots/Screenshot From 2026-04-02 19-43-41.png)
-
+![Logs](screenshots/log.png)
 
 ## 📘 Installation Guide
 
