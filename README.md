@@ -61,7 +61,13 @@ SentinelShield/
 ├── README.md
 ├── INSTALLATION.md
 ```
+## Screenshots
 
+### Dashboard
+![Dashboard](screenshots/Screenshot From 2026-04-02 19-43-10.png)
+
+### Attack Logs
+![Logs](screenshots/Screenshot From 2026-04-02 19-43-41.png)
 
 
 ## 📘 Installation Guide
